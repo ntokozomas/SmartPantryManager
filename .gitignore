@@ -1,0 +1,19 @@
+# Gradle / build output
+.gradle/
+build/
+app/build/
+
+# Local config (contains your SDK path - never commit)
+local.properties
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+
+# macOS
+.DS_Store
+
+# Generated APKs
+*.apk
+*.aab
