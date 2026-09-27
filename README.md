@@ -1,4 +1,4 @@
-# 🧺 Smart Pantry Manager
+#  Smart Pantry Manager
 
 A Java Android app that tracks the ingredients you have at home and suggests
 recipes you can cook **using only what is already in your pantry**, to help
@@ -23,9 +23,9 @@ cut food waste. 💖
 - **Recipe detail:** full ingredient list (✅ have / ❌ missing) and method
 - **Settings:** expiry highlighting, "almost there" toggle, clear pantry
 
-## 🗄️ Database choice: SQLite (Room)
+##  Database choice: SQLite (Room)
 
-_(Write your own justification here, e.g. works fully offline, no account or
+_ works fully offline, no account or
 network needed, data stays on the device, Room checks SQL queries at compile time.)_
 
 Tables: `pantry_items`, `recipes`, `recipe_ingredients`
