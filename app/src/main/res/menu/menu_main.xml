@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_suggestions"
+        app:contentDescription="@string/menu_suggestions_description"
+        android:title="@string/menu_suggestions"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_settings"
+        app:contentDescription="@string/menu_settings_description"
+        android:title="@string/menu_settings"
+        app:showAsAction="always" />
+</menu>

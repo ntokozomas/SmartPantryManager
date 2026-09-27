@@ -1,5 +1,24 @@
 <resources>
-    <style name="Theme.SmartPantry" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="colorPrimary">@color/brand_green</item>
+    <!-- Dark pink + purple theme with white text -->
+    <style name="Theme.SmartPantry" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/pink_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/pink_dark</item>
+        <item name="colorOnPrimaryContainer">@color/white</item>
+        <item name="colorSecondary">@color/purple_lavender</item>
+        <item name="colorOnSecondary">@color/plum_night</item>
+        <item name="colorSecondaryContainer">@color/purple_royal</item>
+        <item name="colorOnSecondaryContainer">@color/white</item>
+        <item name="android:colorBackground">@color/plum_night</item>
+        <item name="colorOnBackground">@color/white</item>
+        <item name="colorSurface">@color/plum_surface</item>
+        <item name="colorOnSurface">@color/white</item>
+        <item name="colorOnSurfaceVariant">@color/text_secondary</item>
+        <item name="colorOutline">@color/purple_lavender</item>
+        <item name="colorError">@color/no_match_red</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:statusBarColor">@color/purple_deep</item>
+        <item name="android:navigationBarColor">@color/plum_night</item>
     </style>
 </resources>

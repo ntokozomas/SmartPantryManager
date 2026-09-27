@@ -9,6 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartPantry">
 
+        <!-- 🧺 Pantry List (launcher screen) -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -17,6 +18,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- ✏️ Add / Edit Ingredient -->
+        <activity
+            android:name=".AddEditItemActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- 🍳 Suggested Recipes -->
+        <activity
+            android:name=".SuggestedRecipesActivity"
+            android:exported="false" />
+
+        <!-- 🧾 Recipe Detail -->
+        <activity
+            android:name=".RecipeDetailActivity"
+            android:exported="false" />
+
+        <!-- ⚙️ Settings -->
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
 
     </application>
 

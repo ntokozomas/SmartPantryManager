@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ✨ Text: "casual" is Android's built-in handwritten-style font for a whimsical look -->
+    <style name="TextAppearance.SmartPantry.ToolbarTitle" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:fontFamily">casual</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="SmartPantry.Text.Heading" parent="">
+        <item name="android:fontFamily">casual</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/pink_soft</item>
+    </style>
+
+    <style name="SmartPantry.Text.Body" parent="">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+    </style>
+
+    <style name="SmartPantry.Text.Secondary" parent="">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <style name="SmartPantry.Text.EmptyState" parent="">
+        <item name="android:fontFamily">casual</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:lineSpacingExtra">6dp</item>
+        <item name="android:padding">24dp</item>
+    </style>
+
+    <!-- 🔘 Buttons -->
+    <style name="Widget.SmartPantry.Button" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/pink_dark</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">casual</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">24dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+    </style>
+
+    <style name="Widget.SmartPantry.Button.Purple">
+        <item name="backgroundTint">@color/purple_royal</item>
+    </style>
+
+    <style name="Widget.SmartPantry.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/pink_hot</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">15sp</item>
+        <item name="cornerRadius">24dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+    </style>
+
+    <style name="Widget.SmartPantry.Button.Danger" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/no_match_red</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="android:textColor">@color/no_match_red</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">casual</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">24dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+    </style>
+
+    <!-- ✏️ Text fields -->
+    <style name="Widget.SmartPantry.TextInput" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/pink_hot</item>
+        <item name="hintTextColor">@color/pink_soft</item>
+        <item name="android:textColorHint">@color/text_secondary</item>
+        <item name="boxBackgroundColor">@color/plum_surface</item>
+        <item name="boxCornerRadiusTopStart">18dp</item>
+        <item name="boxCornerRadiusTopEnd">18dp</item>
+        <item name="boxCornerRadiusBottomStart">18dp</item>
+        <item name="boxCornerRadiusBottomEnd">18dp</item>
+    </style>
+
+    <!-- 🃏 Cards -->
+    <style name="Widget.SmartPantry.Card" parent="Widget.Material3.CardView.Filled">
+        <item name="cardBackgroundColor">@color/plum_surface</item>
+        <item name="cardCornerRadius">24dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="strokeColor">@color/pink_dark</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <!-- 🧭 Toolbar -->
+    <style name="Widget.SmartPantry.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/purple_royal</item>
+        <item name="titleTextColor">@color/white</item>
+        <item name="titleTextAppearance">@style/TextAppearance.SmartPantry.ToolbarTitle</item>
+        <item name="navigationIconTint">@color/white</item>
+    </style>
+</resources>

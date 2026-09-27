@@ -1,4 +1,117 @@
 <resources>
     <string name="app_name">Smart Pantry</string>
-    <string name="welcome">Smart Pantry Manager</string>
+
+    <!-- 🧺 Pantry list (MainActivity) -->
+    <string name="title_pantry">🧺 My Pantry</string>
+    <string name="pantry_greeting">Hello, chef! 👩‍🍳 Here\'s everything in your pantry.</string>
+    <string name="button_what_can_i_cook">🍳 What can I cook?</string>
+    <string name="fab_add_item">➕ Add item</string>
+    <string name="empty_pantry">🥺\nYour pantry is empty!\nTap ➕ to add your first ingredient 🥕🥚🧀</string>
+    <string name="pantry_quantity">%1$s %2$s</string>
+    <string name="menu_suggestions">🍳</string>
+    <string name="menu_suggestions_description">Suggested recipes</string>
+    <string name="menu_settings">⚙️</string>
+    <string name="menu_settings_description">Settings</string>
+    <string name="delete_item_description">Delete ingredient</string>
+
+    <plurals name="pantry_count">
+        <item quantity="one">✨ %d ingredient in your pantry</item>
+        <item quantity="other">✨ %d ingredients in your pantry</item>
+    </plurals>
+
+    <!-- 📅 Expiry labels -->
+    <string name="expiry_none">🌈 No expiry date</string>
+    <string name="expiry_on">📅 Expires %1$s</string>
+    <string name="expiry_today">⏰ Expires today!</string>
+    <string name="expiry_expired">⚠️ Expired on %1$s</string>
+    <plurals name="expiry_soon">
+        <item quantity="one">⏰ Expires in %d day!</item>
+        <item quantity="other">⏰ Expires in %d days!</item>
+    </plurals>
+
+    <!-- ✏️ Add / edit ingredient -->
+    <string name="title_add_item">➕ Add ingredient</string>
+    <string name="title_edit_item">✏️ Edit ingredient</string>
+    <string name="hint_name">Ingredient name (e.g. Tomatoes)</string>
+    <string name="hint_quantity">Quantity (e.g. 3)</string>
+    <string name="label_unit">📏 Unit</string>
+    <string name="label_expiry">📅 Expiry date</string>
+    <string name="expiry_pick">Pick a date (optional)</string>
+    <string name="expiry_selected">📅 %1$s</string>
+    <string name="expiry_clear_description">Remove expiry date</string>
+    <string name="button_save">💾 Save to pantry</string>
+    <string name="button_delete_item">🗑️ Delete ingredient</string>
+
+    <string name="error_name_required">Oops! Please give your ingredient a name 🙈</string>
+    <string name="error_name_too_long">Keep it under %1$d characters, please ✂️</string>
+    <string name="error_name_letters">The name needs at least one letter 🔤</string>
+    <string name="error_quantity_required">How many do you have? 🔢</string>
+    <string name="error_quantity_invalid">That doesn\'t look like a number 🤔</string>
+    <string name="error_quantity_positive">Quantity must be more than 0 🥄</string>
+    <string name="error_quantity_too_large">Whoa, that\'s a lot! Max is %1$s 😮</string>
+
+    <string name="toast_added">✨ %1$s added to your pantry!</string>
+    <string name="toast_updated">💖 %1$s updated!</string>
+    <string name="toast_deleted">👋 %1$s removed</string>
+    <string name="toast_item_not_found">Couldn\'t find that ingredient 😿</string>
+
+    <string name="dialog_delete_title">Delete ingredient? 🗑️</string>
+    <string name="dialog_delete_message">Remove \"%1$s\" from your pantry?</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_cancel">Cancel</string>
+
+    <!-- 🍳 Suggested recipes -->
+    <string name="title_suggestions">🍳 What can I cook?</string>
+    <string name="suggest_summary">🔍 Checked %1$d recipes against your %2$d pantry items</string>
+    <string name="header_ready">✨ Ready to cook right now</string>
+    <string name="no_matches">😢 No recipes match your pantry yet.\nAdd more ingredients! 🥕🧅🥚</string>
+    <string name="header_almost_there">🌈 Almost there (bonus!)</string>
+    <string name="almost_there_note">These are missing just ONE ingredient, so they\'re not in your main suggestions.</string>
+    <string name="no_almost_there">Nothing is only one ingredient away right now 🙈</string>
+    <string name="recipe_missing_subtitle">🛒 Missing: %1$s %2$s %3$s</string>
+    <plurals name="recipe_ready_subtitle">
+        <item quantity="one">✅ You have the %d ingredient needed</item>
+        <item quantity="other">✅ You have all %d ingredients</item>
+    </plurals>
+
+    <!-- 🧾 Recipe detail -->
+    <string name="title_recipe">🧾 Recipe</string>
+    <string name="header_ingredients">🧾 Ingredients</string>
+    <string name="header_method">👩‍🍳 Method</string>
+    <string name="ingredient_have">✅ %1$s %2$s %3$s</string>
+    <string name="ingredient_missing">❌ %1$s %2$s %3$s</string>
+    <string name="step_format">%1$d. %2$s</string>
+    <string name="detail_status_ready">🎉 You can cook this right now!</string>
+    <plurals name="detail_status_missing">
+        <item quantity="one">🛒 You\'re missing %d ingredient</item>
+        <item quantity="other">🛒 You\'re missing %d ingredients</item>
+    </plurals>
+    <string name="toast_recipe_not_found">Couldn\'t find that recipe 😿</string>
+
+    <!-- ⚙️ Settings -->
+    <string name="title_settings">⚙️ Settings</string>
+    <string name="header_preferences">💖 Preferences</string>
+    <string name="setting_highlight_expiring">⏰ Highlight items expiring soon</string>
+    <string name="setting_highlight_expiring_summary">Items that expire within 3 days turn yellow, expired ones turn red.</string>
+    <string name="setting_almost_there">🌈 Show \"Almost there\" recipes</string>
+    <string name="setting_almost_there_summary">Also list recipes that are missing just one ingredient.</string>
+    <string name="header_danger_zone">🧹 Tidy up</string>
+    <string name="button_clear_pantry">🧹 Clear my whole pantry</string>
+    <string name="dialog_clear_title">Clear your pantry? 🧹</string>
+    <string name="dialog_clear_message">This removes every ingredient. Your recipe book stays safe.</string>
+    <string name="action_clear">Clear</string>
+    <string name="toast_pantry_cleared">✨ Pantry cleared!</string>
+    <string name="about_text">Made with 💖 to cut food waste.\nSmart Pantry Manager v1.0</string>
+
+    <!-- 📏 Units offered in the unit dropdown -->
+    <string-array name="units">
+        <item>pcs</item>
+        <item>g</item>
+        <item>kg</item>
+        <item>ml</item>
+        <item>L</item>
+        <item>tsp</item>
+        <item>tbsp</item>
+        <item>cup</item>
+    </string-array>
 </resources>

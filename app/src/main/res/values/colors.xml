@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="brand_green">#2E7D32</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- 💜 Purples -->
+    <color name="plum_night">#1E0B2B</color>        <!-- app background -->
+    <color name="plum_surface">#35164A</color>      <!-- cards -->
+    <color name="plum_surface_alt">#4A1F63</color>  <!-- emoji bubbles, inputs -->
+    <color name="purple_royal">#6A1B9A</color>      <!-- toolbar -->
+    <color name="purple_deep">#4A148C</color>       <!-- status bar -->
+    <color name="purple_lavender">#CE93D8</color>   <!-- outlines, accents -->
+
+    <!-- 💗 Pinks -->
+    <color name="pink_dark">#C2185B</color>         <!-- main buttons -->
+    <color name="pink_hot">#EC407A</color>          <!-- borders, highlights -->
+    <color name="pink_soft">#F8BBD0</color>         <!-- headings -->
+
+    <!-- ✍️ Text -->
+    <color name="white">#FFFFFF</color>
+    <color name="text_secondary">#E8D5F2</color>
+
+    <!-- 🚦 Status colours (chosen to contrast well on the dark plum background) -->
+    <color name="no_match_red">#FF6B6B</color>
+    <color name="warning_yellow">#FFD166</color>
+    <color name="success_mint">#7CF2C3</color>
 </resources>
