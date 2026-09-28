@@ -9,15 +9,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartPantry">
 
-        <!-- 🧺 Pantry List (launcher screen) -->
+        <!-- 🌸 Splash screen (launcher screen) -->
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.SmartPantry.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- 🧺 Pantry List -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
 
         <!-- ✏️ Add / Edit Ingredient -->
         <activity

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Android 12+ also shows a system splash first: make it match our colours -->
+    <style name="Theme.SmartPantry.Splash" parent="Theme.SmartPantry">
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+        <item name="android:statusBarColor">@color/plum_night</item>
+        <item name="android:navigationBarColor">@color/pink_dark</item>
+        <item name="android:windowSplashScreenBackground">@color/plum_night</item>
+    </style>
+</resources>

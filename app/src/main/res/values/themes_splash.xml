@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Splash uses the gradient as its window background so there is no white flash on launch -->
+    <style name="Theme.SmartPantry.Splash" parent="Theme.SmartPantry">
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+        <item name="android:statusBarColor">@color/plum_night</item>
+        <item name="android:navigationBarColor">@color/pink_dark</item>
+    </style>
+</resources>

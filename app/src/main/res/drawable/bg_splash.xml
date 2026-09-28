@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Diagonal purple -> dark pink gradient -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <gradient
+        android:angle="315"
+        android:centerColor="@color/purple_royal"
+        android:endColor="@color/pink_dark"
+        android:startColor="@color/plum_night"
+        android:type="linear" />
+</shape>

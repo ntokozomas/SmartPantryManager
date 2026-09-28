@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="splash_emoji">🧺</string>
+    <string name="splash_title">Smart Pantry</string>
+    <string name="splash_tagline">Cook with what you\'ve got 💖</string>
+    <string name="splash_foods">🥕🍅🥚🧀🍌</string>
+    <string name="splash_footer">Cutting food waste, one recipe at a time 🌱</string>
+</resources>

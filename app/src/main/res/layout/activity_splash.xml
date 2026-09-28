@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 🌸 Splash screen -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/splashRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/textSplashEmoji"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/bg_splash_bubble"
+            android:gravity="center"
+            android:text="@string/splash_emoji"
+            android:textSize="76sp" />
+
+        <TextView
+            android:id="@+id/textSplashTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="casual"
+            android:text="@string/splash_title"
+            android:textColor="@color/white"
+            android:textSize="38sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textSplashTagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:text="@string/splash_tagline"
+            android:textColor="@color/pink_soft"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textSplashFoods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:letterSpacing="0.2"
+            android:text="@string/splash_foods"
+            android:textSize="28sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="@string/splash_footer"
+        android:textColor="@color/text_secondary"
+        android:textSize="14sp" />
+</FrameLayout>
