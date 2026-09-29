@@ -111,7 +111,10 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
-        if (id == R.id.action_suggestions) {
+        if (id == R.id.action_recipe_book) {
+            startActivity(new Intent(this, RecipeBookActivity.class));
+            return true;
+        } else if (id == R.id.action_suggestions) {
             openSuggestions();
             return true;
         } else if (id == R.id.action_settings) {

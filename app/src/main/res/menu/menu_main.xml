@@ -3,6 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
+        android:id="@+id/action_recipe_book"
+        app:contentDescription="@string/menu_recipe_book_description"
+        android:title="@string/menu_recipe_book"
+        app:showAsAction="always" />
+
+    <item
         android:id="@+id/action_suggestions"
         app:contentDescription="@string/menu_suggestions_description"
         android:title="@string/menu_suggestions"

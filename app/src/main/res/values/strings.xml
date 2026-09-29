@@ -12,6 +12,8 @@
     <string name="menu_suggestions_description">Suggested recipes</string>
     <string name="menu_settings">⚙️</string>
     <string name="menu_settings_description">Settings</string>
+    <string name="menu_recipe_book">📖</string>
+    <string name="menu_recipe_book_description">Recipe book</string>
     <string name="delete_item_description">Delete ingredient</string>
 
     <plurals name="pantry_count">
