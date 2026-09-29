@@ -1,32 +1,34 @@
 #  Smart Pantry Manager
 
-A Java Android app that tracks the ingredients you have at home and suggests
-recipes you can cook **using only what is already in your pantry**, to help
-cut food waste. 💖
+Is a Java Android app that tracks the ingredients you have at home and based on that, it will suggest recipes you can cook **using only what is already in your pantry**, to help cut food waste. 💖
 
-> Mobile App Development 700 – Practical Assignment
+> This assignment is a school project for the module; Mobile App Development 700 – Practical Assignment
 
 ## ✨ Features
 
-- **Pantry management (full CRUD):** add, view, edit and delete ingredients
+- **Pantry management (full CRUD):** You can add, view, edit and delete ingredients
   (name, quantity, unit, optional expiry date) with input validation
 - **Pantry list:** RecyclerView with a custom adapter, food emojis, and
-  expiry highlighting (yellow = expiring within 3 days, red = expired)
-- **Recipe book:** 20 recipes pre-loaded into the database on first launch
+  expiry highlighting (yellow = expiring within 3 days, red = expired), so that you can easily track the condition of the food items you have in the pantry
+- **Recipe book:** It has 22 recipes pre-loaded into the database on first launch
 - **Suggested recipes (strict matching):** a recipe is shown only if *every*
   ingredient is in the pantry in *at least* the required quantity
   - Names are normalised (`Tomatoes` = `tomato`, `Scallions` = `spring onion`)
   - Units are converted (`1 kg` = `1000 g`, `2 tbsp` = `30 ml`)
   - A friendly message is shown when nothing matches
 - **Almost there (bonus):** a separate, clearly labelled list of recipes missing
-  exactly one ingredient (can be switched off in Settings)
+  exactly one ingredient, that way there's more room for recipe and combo possibilities (can be switched off in Settings)
 - **Recipe detail:** full ingredient list (✅ have / ❌ missing) and method
 - **Settings:** expiry highlighting, "almost there" toggle, clear pantry
 
 ##  Database choice: SQLite (Room)
 
-_ works fully offline, no account or
-network needed, data stays on the device, Room checks SQL queries at compile time.)_
+_ I chose SQLite(with Room) for my database because, it is personal and the data is kept locally, each persons pantry is individual to them, and doesn't have to be shared with other users, so it doesn't have to be cloud-based like Firebase or PostgreSQL.
+_ It works offline, in the event that you quickly want to check your pantry or in the grocery store as you're shopping, and you don't have an internet connection, Sqlite lives on the phone itself, so it'll always work.
+_ It doesn't need any extra setup or accounts, users don't have to log-in, and backend wise its also an easy set up, no servers needed, or REST APIs, the database already comes with the device.
+_The data shape works best with sqlite, the ingredients and recipes have one-to-many relationship, and sqlite is a relational database, and a foreign key links each ingredient to its recipe, so deleting a recipe also removes its ingredients automatically, its a cascading effect.
+_ Room makes the code safer and cleaner, any sql queries are checked during the building of the app, so typo and things of that nature are caught before the app even runs, this removes the need for the repetitive code of the older SQLLiteOpenHelper approach.
+_ In comparison to databases that have servers and more extensive set-up, this option does come with a trade-off, the user's pantry data stays on one device. There's no backup or sync, so if something happens to the phone, that data will be lost.
 
 Tables: `pantry_items`, `recipes`, `recipe_ingredients`
 (one recipe → many ingredients via a foreign key).
