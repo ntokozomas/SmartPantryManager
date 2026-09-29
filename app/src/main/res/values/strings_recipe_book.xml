@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_recipe_book">📖 Recipe Book</string>
+    <string name="book_summary">✨ %1$d yummy recipes - tap one to peek inside!</string>
+    <string name="book_ready">✅ Ready to cook!</string>
+    <plurals name="book_missing">
+        <item quantity="one">🛒 Missing %1$d of %2$d ingredients</item>
+        <item quantity="other">🛒 Missing %1$d of %2$d ingredients</item>
+    </plurals>
+</resources>

@@ -41,6 +41,11 @@
             android:name=".RecipeDetailActivity"
             android:exported="false" />
 
+        <!-- 📖 Recipe Book -->
+        <activity
+            android:name=".RecipeBookActivity"
+            android:exported="false" />
+
         <!-- ⚙️ Settings -->
         <activity
             android:name=".SettingsActivity"

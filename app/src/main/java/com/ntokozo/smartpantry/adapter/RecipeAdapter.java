@@ -22,11 +22,12 @@ import java.util.List;
 
 /**
  * Custom RecyclerView adapter for recipe cards.
- * Used twice on the suggestions screen: once for strict matches, once for "almost there".
+ * Used on the suggestions screen (strict matches + "almost there") and the Recipe Book screen.
  */
 public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.RecipeViewHolder> {
 
-    public enum Mode { READY, ALMOST_THERE }
+    /** READY = strict matches, ALMOST_THERE = missing one item, BOOK = every recipe. */
+    public enum Mode { READY, ALMOST_THERE, BOOK }
 
     public interface OnRecipeClickListener {
         void onRecipeClick(MatchResult result);
@@ -84,7 +85,9 @@ public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.RecipeView
             textEmoji.setText(recipe.getEmoji());
             textName.setText(recipe.getName());
 
-            if (mode == Mode.READY) {
+            if (mode == Mode.BOOK) {
+                bindBookSubtitle(context, result);
+            } else if (mode == Mode.READY) {
                 int count = result.getRecipeWithIngredients().getIngredients().size();
                 textSubtitle.setText(context.getResources()
                         .getQuantityString(R.plurals.recipe_ready_subtitle, count, count));
@@ -98,6 +101,21 @@ public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.RecipeView
             }
 
             itemView.setOnClickListener(v -> listener.onRecipeClick(result));
+        }
+
+        /** Recipe Book: show whether the recipe is ready, or how many ingredients are missing. */
+        private void bindBookSubtitle(Context context, MatchResult result) {
+            int missing = result.getMissingCount();
+            int total = result.getRecipeWithIngredients().getIngredients().size();
+            if (result.isStrictMatch()) {
+                textSubtitle.setText(R.string.book_ready);
+                textSubtitle.setTextColor(ContextCompat.getColor(context, R.color.success_mint));
+            } else {
+                textSubtitle.setText(context.getResources()
+                        .getQuantityString(R.plurals.book_missing, missing, missing, total));
+                int color = missing == 1 ? R.color.warning_yellow : R.color.text_secondary;
+                textSubtitle.setTextColor(ContextCompat.getColor(context, color));
+            }
         }
     }
 }
