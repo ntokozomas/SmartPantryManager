@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Pre-loads the recipe book (20 recipes) the first time the database is created.
+ * Pre-loads the recipe book (22 recipes) the first time the database is created.
  * Units follow one convention so matching works well:
  * countable things use "pcs", solids use "g", liquids use "ml".
  */
@@ -158,6 +158,27 @@ public final class RecipeSeeder {
                         "Cover and cook until the eggs are set."),
                 ing("Eggs", 4, "pcs"), ing("Tomatoes", 4, "pcs"), ing("Onion", 1, "pcs"),
                 ing("Bell pepper", 1, "pcs"), ing("Garlic", 2, "pcs"));
+
+        add(dao, "🍛", "Durban Bunny Chow", "A hollowed-out loaf filled with spicy mutton curry. Proudly Durban!",
+                steps("Fry the chopped onion until golden, then add the garlic and curry powder.",
+                        "Add the mutton pieces and brown them all over.",
+                        "Add the chopped tomatoes and a cup of water; simmer for 1 hour.",
+                        "Add the diced potatoes and cook until soft and the curry is thick.",
+                        "Cut the loaf in half, scoop out the soft middle and fill with curry.",
+                        "Serve with the scooped-out bread on top for dipping."),
+                ing("Mutton", 500, "g"), ing("Potatoes", 2, "pcs"), ing("Onion", 1, "pcs"),
+                ing("Tomatoes", 2, "pcs"), ing("Garlic", 2, "pcs"), ing("Curry powder", 20, "g"),
+                ing("Bread loaf", 1, "pcs"));
+
+        add(dao, "🥯", "Plain Vetkoek", "Golden, fluffy fried dough - perfect with jam, cheese or mince.",
+                steps("Mix the flour, yeast, sugar and salt in a big bowl.",
+                        "Add warm water bit by bit and knead into a soft dough.",
+                        "Cover and leave in a warm place to rise for about 1 hour.",
+                        "Shape into balls and let them rest for 10 minutes.",
+                        "Deep-fry in hot oil until golden brown on both sides.",
+                        "Drain on paper towel and enjoy warm."),
+                ing("Flour", 500, "g"), ing("Yeast", 10, "g"), ing("Sugar", 15, "g"),
+                ing("Salt", 5, "g"), ing("Oil", 500, "ml"));
     }
 
     private static void add(RecipeDao dao, String emoji, String name, String description,

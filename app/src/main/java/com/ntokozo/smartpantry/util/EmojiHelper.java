@@ -38,6 +38,9 @@ public final class EmojiHelper {
         KEYWORDS.put("steak", "🥩");
         KEYWORDS.put("beef", "🥩");
         KEYWORDS.put("mince", "🥩");
+        KEYWORDS.put("mutton", "🍖");
+        KEYWORDS.put("lamb", "🍖");
+        KEYWORDS.put("yeast", "🍞");
         KEYWORDS.put("bacon", "🥓");
         KEYWORDS.put("pork", "🥓");
         KEYWORDS.put("sausage", "🌭");
