@@ -109,4 +109,22 @@ public class RecipeMatcherTest {
         assertTrue(RecipeMatcher.findStrictMatches(Collections.emptyList(),
                 Collections.singletonList(OMELETTE)).isEmpty());
     }
+
+    @Test
+    public void breadSlicesDoNotCountAsABreadLoaf() {
+        // Arrange: a recipe that needs a whole loaf
+        RecipeWithIngredients bunnyChow = recipe("Bunny Chow",
+                need("Bread loaf", 1, "pcs"), need("Mutton", 500, "g"));
+
+        // ...and a pantry with sliced bread instead of a loaf
+        List<PantryItem> items = Arrays.asList(
+                pantry("Bread", 10, "pcs"), pantry("Mutton", 1, "kg"));
+
+        // Act
+        List<MatchResult> matches = RecipeMatcher.findStrictMatches(items,
+                Collections.singletonList(bunnyChow));
+
+        // Assert: it must NOT be suggested
+        assertTrue(matches.isEmpty());
+    }
 }
